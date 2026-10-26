@@ -1,0 +1,4 @@
+import {parseArchive,archive} from '../journal';
+import {putDocuments,readDocuments} from './storage';
+export async function exportBackup(){const url=URL.createObjectURL(new Blob([archive(await readDocuments())],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='moni-backup.json';a.click();URL.revokeObjectURL(url);}
+export async function restoreBackup():Promise<boolean>{return new Promise((resolve,reject)=>{const input=document.createElement('input');input.type='file';input.accept='.json';input.oncancel=()=>resolve(false);input.onchange=async()=>{try{const f=input.files?.[0];if(!f)return resolve(false);if(f.size>20000000)throw new Error('Choose a backup smaller than 20 MB.');await putDocuments(parseArchive(await f.text()));resolve(true);}catch(e){reject(e);}};input.click();});}

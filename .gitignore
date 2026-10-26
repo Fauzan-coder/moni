@@ -1,0 +1,41 @@
+# Dependencies, caches and generated platform/build output
+node_modules/
+.expo/
+dist/
+dist-android/
+/android/
+/ios/
+**/build/
+**/.gradle/
+coverage/
+*.log
+.DS_Store
+
+# Local configuration and signing material: never publish
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+*.mobileprovision
+*.apk
+*.aab
+*.ipa
+google-services.json
+GoogleService-Info.plist
+credentials.json
+service-account*.json
+local.properties
+
+# Local financial data / backups
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+moni-backup*.json
+moni-revision*.json
