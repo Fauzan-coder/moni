@@ -11,7 +11,27 @@
 
 These are browser-preview captures with synthetic demo data. Native Android uses the same React Native screens; system payment, camera and Google dialogs are Android-only.
 
+### Mobile screens
+
+Dashboard, ledger, loan details, notes, insights and settings at a **400px phone viewport** (800 × 1728 captures). Tap any image for the full-size view. These are responsive browser-preview captures, not Android device screenshots.
+
+<p>
+  <a href="docs/screenshots/mobile-overview.png"><img src="docs/screenshots/mobile-overview.png" alt="Dashboard at phone width, using synthetic demo data" width="220" /></a>
+  <a href="docs/screenshots/mobile-ledger.png"><img src="docs/screenshots/mobile-ledger.png" alt="Money ledger at phone width, using synthetic demo data" width="220" /></a>
+  <a href="docs/screenshots/mobile-loan.png"><img src="docs/screenshots/mobile-loan.png" alt="Loan details at phone width, using synthetic demo data" width="220" /></a>
+</p>
+
+<p>
+  <a href="docs/screenshots/mobile-notes.png"><img src="docs/screenshots/mobile-notes.png" alt="Financial notes at phone width, using synthetic demo data" width="220" /></a>
+  <a href="docs/screenshots/mobile-insights.png"><img src="docs/screenshots/mobile-insights.png" alt="Spending insights at phone width, using synthetic demo data" width="220" /></a>
+  <a href="docs/screenshots/mobile-settings.png"><img src="docs/screenshots/mobile-settings.png" alt="Accounts and backup settings at phone width, using synthetic demo data" width="220" /></a>
+</p>
+
+<details><summary>Desktop dashboard</summary>
+
 ![Colorful matte dashboard with synthetic sample transactions](docs/screenshots/overview.png)
+
+</details>
 
 <details><summary>Welcome and onboarding</summary>
 
